@@ -1,12 +1,14 @@
 <!-- app/view/news/list.tpl -->
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="format-detection" content="telephone=no">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <title>Hacker News</title>
-    <link rel="stylesheet" href="/public/libs/frozen_ui/css/frozen.css" />
-        <style>
+    <!-- <link rel="stylesheet" href="/public/css/news.css" /> -->
+    <style>
         table,tr,td {
             border: 1px dotted #ccc;
             border-spacing:0;
@@ -31,28 +33,15 @@
             background-color:#B2A1C7;
         }
     </style>
-  </head>
-  <body ontouchstart="">
+</head>
 
-        <header class="ui-header ui-header-positive ui-border-b">
-            <i class="ui-icon-return" onclick="history.back()"></i><h1>选项卡 tab</h1><button class="ui-btn">回首页</button>
-        </header>
-        <footer class="ui-footer ui-footer-btn">
-            <ul class="ui-tiled ui-border-t">
-                <li data-href="index.html" class="ui-border-r"><div>基础样式</div></li>
-                <li data-href="ui.html" class="ui-border-r"><div>UI组件</div></li>
-                <li data-href="js.html"><div>JS插件</div></li>
-            </ul>
-        </footer>
-
-        <section class="ui-container">
-           <table class="ui-table ui-border">
-            <thead>
-                <th colspan="4"><h1>More健身方案设计调研问卷</h1></th>
-            </thead>
-            <tr>
-                <td colspan="4" class="head part1">基本信息填写(必填)</td>
-            </tr>
+<body>
+    <div class="news-view view">
+         <h1>More健身方案设计调研问卷</h1> 
+        <table data-role="table">
+             <tr>
+                <td  class="head part1">基本信息填写(必填)</td>
+             </tr> 
             <tr>
                 <td>性别</td>
                 <td>
@@ -101,29 +90,29 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="4">
+                <td >
                     是否久坐少动(每周运动少于3次，每次少于30分钟，此情况已有3个月)
                     是<input type="radio" name="longsit" value="y">
                     否<input type="radio" name="longsit" value="n">
                 </td>
             </tr>
             <tr>
-                <td colspan="2">有无运动损伤（已就医或需就医的）</td>
-                <td colspan="2">
+                <td >有无运动损伤（已就医或需就医的）</td>
+                <td >
                     是(若有请说明)<input type="radio" name="injure" value="y">
                     否<input type="radio" name="injure" value="n">
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
+                <td >
                     损伤部位:<input type="text" name="injureposition">
                     <br/>
                     肩，肘，腕，髋，膝，踝，颈椎，胸椎，腰椎
                 </td>
-                <td colspan="2">具体情况: <textarea></textarea></td>
+                <td >具体情况: <textarea></textarea></td>
             </tr>
             <tr>
-                <td colspan="4" class="head part2">基本信息(选填尽量填)</td>
+                <td  class="head part2">基本信息(选填尽量填)</td>
             </tr>
             <tr>
                 <td>是否高血压</td>
@@ -153,11 +142,11 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="4" class="head part3">个人运动信息(选填尽量填)</td>
+                <td  class="head part3">个人运动信息(选填尽量填)</td>
             </tr>
             <tr>
-                <td colspan="2">健身目标</td>
-                <td colspan="2">
+                <td >健身目标</td>
+                <td >
                     提升阶段<input type="radio" name="fitness" value="6">
                     减脂<input type="radio" name="fitness" value="5">
                     塑形<input type="radio" name="fitness" value="4">
@@ -168,23 +157,23 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2">有无健身习惯</td>
-                <td colspan="2">
+                <td >有无健身习惯</td>
+                <td >
                     有(若有，请填写下列选项)<input type="radio" name="fitnesshabit" value="y">
                     无<input type="radio" name="fitnesshabit" value="n">
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
+                <td >
                     每周健身方式:<input type="text" name="fitnessway">
                 </td>
-                <td colspan="2">
+                <td >
                     健身次数:<input type="text" name="fitnesstimes">
                 </td>
             </tr>
 
             <tr>
-                <td colspan="4" class="head part4">个人资料信息</td>
+                <td  class="head part4">个人资料信息</td>
             </tr>
             <tr>
                 <td>姓名</td>
@@ -208,11 +197,7 @@
             </tr>
         </table>
         <b>注：您的信息将会保密，请务必准确填写完整。上述信息将用于您的健身解决方案。我们将根据您填写的完善性、准确性制定对应的方案，选填项也请尽量填写哦。</b>
-        </section>
-        <script src="/public/libs/frozen_ui/lib/zepto.min.js"></script>
-        <script src="/public/libs/frozen_ui/js/frozen.js"></script>
-        <script>
+    </div>
+</body>
 
-        </script>
-    </body>
 </html>
