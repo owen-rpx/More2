@@ -1,10 +1,12 @@
 <!-- app/view/news/list.tpl -->
 <html>
-
-<head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
     <title>Hacker News</title>
-    <!-- <link rel="stylesheet" href="/public/css/news.css" /> -->
-    <style>
+    <link rel="stylesheet" href="/public/libs/frozen_ui/css/frozen.css" />
+        <style>
         table,tr,td {
             border: 1px dotted #ccc;
             border-spacing:0;
@@ -29,12 +31,22 @@
             background-color:#B2A1C7;
         }
     </style>
-</head>
-
-<body>
-    <div class="news-view view">
-          
-        <table>
+  </head>
+  <body ontouchstart="">
+        
+        <header class="ui-header ui-header-positive ui-border-b">
+            <i class="ui-icon-return" onclick="history.back()"></i><h1>选项卡 tab</h1><button class="ui-btn">回首页</button>
+        </header>
+        <footer class="ui-footer ui-footer-btn">
+            <ul class="ui-tiled ui-border-t">
+                <li data-href="index.html" class="ui-border-r"><div>基础样式</div></li>
+                <li data-href="ui.html" class="ui-border-r"><div>UI组件</div></li>
+                <li data-href="js.html"><div>JS插件</div></li>
+            </ul>
+        </footer>
+        
+        <section class="ui-container">
+           <table class="ui-table ui-border">
             <thead>
                 <th colspan="4"><h1>More健身方案设计调研问卷</h1></th>
             </thead>
@@ -110,7 +122,6 @@
                 </td>
                 <td colspan="2">具体情况: <textarea></textarea></td>
             </tr>
-            
             <tr>
                 <td colspan="4" class="head part2">基本信息(选填尽量填)</td>
             </tr>
@@ -197,7 +208,13 @@
             </tr>
         </table>
         <b>注：您的信息将会保密，请务必准确填写完整。上述信息将用于您的健身解决方案。我们将根据您填写的完善性、准确性制定对应的方案，选填项也请尽量填写哦。</b>
-    </div>
-</body>
+        </section>
+        
+        <script src="/public/libs/frozen_ui/lib/zepto.min.js"></script>
+        <script src="/public/libs/frozen_ui/js/frozen.js"></script>
+        
+        <script>
 
+        </script>
+    </body>
 </html>
