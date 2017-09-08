@@ -190,7 +190,7 @@
                 <legend>是否高血压</legend>
                 <input type="radio" name="hypertension" id="hypertension-n" value="0">
                 <label for="hypertension-n">否</label>
-                <input type="radio" name="birth" id="hypertension-y" value="1">
+                <input type="radio" name="hypertension" id="hypertension-y" value="1">
                 <label for="hypertension-y">是</label>
             </fieldset>
             <fieldset data-role="controlgroup">
